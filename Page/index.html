@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/style.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="/print.css" media="print" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <title>Trie | trie-search</title>
+    <meta name="generator" content="Jekyll v3.8.7">
+    <meta property="og:title" content="Trie">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="A little search engine implementation using trie data structure.">
+    <meta property="og:description" content="A little search engine implementation using trie data structure.">
+    <link rel="canonical" href="https://rohitkaushal7.github.io/trie-search/">
+    <meta property="og:url" content="https://rohitkaushal7.github.io/trie-search/">
+    <meta property="og:site_name" content="trie-search">
+    <script type="application/ld+json">
+    {"@type":"WebSite","headline":"Trie","url":"https://rohitkaushal7.github.io/trie-search/","description":"A little search engine implementation using trie data structure.","name":"trie-search","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+    
+</head>
+<body>
+    <header>
+      <div class="inner">
+        <a href="https://rohitkaushal7.github.io/trie-search/">
+          <h1>trie-search</h1>
+        </a>
+        <h2>A little search engine implementation using trie data structure.</h2>
+        
+          <a href="https://github.com/RohitKaushal7/trie-search" class="button"><small>View project on</small> GitHub</a>
+        
+        
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1 id="trie">Trie</h1>
+<p>In computer science, a trie, also called digital tree or prefix tree, is a kind of search tree—an ordered tree data structure used to store a dynamic set or associative array where the keys are usually strings.</p>
+
+<p>Unlike a binary search tree, no node in the tree stores the key associated with that node; instead, its position in the tree defines the key with which it is associated; i.e., the value of the key is distributed across the structure. All the descendants of a node have a common prefix of the string associated with that node, and the root is associated with the empty string. Keys tend to be associated with leaves, though some inner nodes may correspond to keys of interest. Hence, keys are not necessarily associated with every node. For the space-optimized presentation of prefix tree, see compact prefix tree.</p>
+
+<p><img src="https://4.bp.blogspot.com/-8k4wh7UHgk0/WXmLHldDZyI/AAAAAAAAACo/KgI2LkJKaiQzMCecx91dOFrSKcCdWDxhgCLcBGAs/s640/trie.png" alt=""></p>
+
+<h1 id="applications">Applications</h1>
+
+<ul>
+  <li>Looking up data in a trie is faster in the worst case, O(m) time (where m is the length of a search string), compared to an imperfect hash table. An imperfect hash table can have key collisions. A key collision is the hash function mapping of different keys to the same position in a hash table. The worst-case lookup speed in an imperfect hash table is O(N) time, but far more typically is O(1), with O(m) time spent evaluating the hash.</li>
+  <li>There are no collisions of different keys in a trie.</li>
+  <li>There is no need to provide a hash function or to change hash functions as more keys are added to a trie.</li>
+  <li>A trie can provide an alphabetical ordering of the entries by key.</li>
+</ul>
+
+<p><strong>Complexities</strong></p>
+<blockquote>
+  <p>Insert : O(m)    : m is the length of string. <br>
+Delete : O(m)    : m is the length of string. <br>
+Search : O(m)    : m is the length of string. <br></p>
+
+  <p>Space Complexity : O(n*m)     :  n = number of string , m = avg length of strings</p>
+</blockquote>
+
+<h1 id="run-the-project-linux">Run the project (linux)</h1>
+<ul>
+  <li>in the root directory of the project run
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">make</code> : it will compile the project and produce the executable in <code class="language-plaintext highlighter-rouge">build/trie-search</code></li>
+      <li>data files are stored in <code class="language-plaintext highlighter-rouge">data/</code> directory which consist of string units each in different line.
+        <ul>
+          <li>you can store custom strings in words.txt or add a custom file in data/ directory.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>execute the executable directly. OR <code class="language-plaintext highlighter-rouge">make run</code> in the root directory.
+    <ul>
+      <li>choose the file to load in trie data structure.</li>
+      <li>search for keywords.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="run-the-project-win">Run the project (win)</h2>
+<ul>
+  <li>Compile the file <code class="language-plaintext highlighter-rouge">src/main.cpp</code> in windows to produce the executable and then run the executable.</li>
+</ul>
+
+<h1 id="manual">Manual</h1>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">./trie-search</code></li>
+  <li><code class="language-plaintext highlighter-rouge">./trie-search [path_to_file]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">./trie-search [path_to_file] [pattern_to_search]</code></li>
+</ul>
+
+<h1 id="example">Example</h1>
+<h3 id="universal-search">Universal Search</h3>
+<p><img src="../docs/images/uni-search.png" alt=""></p>
+<h3 id="prefix-search">Prefix Search</h3>
+<p><img src="../docs/images/pre-search.png" alt=""></p>
+
+        </section>
+
+        <aside id="sidebar">
+          
+
+          
+            <p class="repo-owner"><a href="https://github.com/RohitKaushal7/trie-search">trie-search</a> is maintained by <a href="https://github.com/RohitKaushal7">RohitKaushal7</a>.</p>
+          
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+    
+  
+
+</body>
+</html>
