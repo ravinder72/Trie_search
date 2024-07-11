@@ -1,7 +1,7 @@
 # Trie Search
 A little Search Engine implementation using Trie Data Structure.
 
-[*See Documentation*](https://trie-search-2.onrender.com)
+[*See Documentation*](https://trie-search.onrender.com)
 
 ### scripts
 - `make`
