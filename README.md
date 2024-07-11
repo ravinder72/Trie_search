@@ -1,7 +1,7 @@
 # Trie Search
 A little Search Engine implementation using Trie Data Structure.
 
-[*See Documentation*](https://github.com/ravinder72/Trie_search)
+[*See Documentation*](https://github.com/ravinder72/Trie_search/blob/main/docs/index.md)
 
 ### scripts
 - `make`
